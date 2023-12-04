@@ -1,0 +1,69 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+}
+.music-container{
+    width: 20rem;
+    height: 25rem;
+    /* background-color: rgb(131, 131, 167); */
+    background-color: wheat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 1.5em 2em;
+}
+.music-container h2{
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 900;
+text-align: center;
+}
+.music-container h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em;
+}
+.img-container{
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+   
+}
+.img-container img{
+ 
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.music-controller{
+    font-size: 2em;
+  width: 10rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 1.4em;
+} 
+
+.anime{
+    animation: rotatePlayer 4s linear infinite ;
+}
+ @keyframes rotatePlayer {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+ }
